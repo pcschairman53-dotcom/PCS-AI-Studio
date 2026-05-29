@@ -1,0 +1,8 @@
+{
+  "name": "PCS AI Studio",
+  "description": "A dark premium AI SaaS landing page and interactive playground featuring AI Caption, Poster Prompt, Video Prompt, and Ad Copy generators with English and Bengali support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

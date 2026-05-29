@@ -1,0 +1,10 @@
+{
+  "projectId": "pcs-ai-studio",
+  "appId": "1:272926811473:web:aa5ad140e9bd24b4249f70",
+  "apiKey": "AIzaSyA9KnW-r2imZDJ11dHSCVrBnieKsXmZlpQ",
+  "authDomain": "pcs-ai-studio.firebaseapp.com",
+  "firestoreDatabaseId": "(default)",
+  "storageBucket": "pcs-ai-studio.firebasestorage.app",
+  "messagingSenderId": "272926811473",
+  "measurementId": "G-GYWPZWGXNM"
+}

@@ -1,0 +1,66 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile state containing visual customization settings, subscription limits, saved marketing campaigns, custom prompts vault, and user activity logs.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "The firebase unique authentication identifier"
+        },
+        "email": {
+          "type": "string",
+          "description": "The user registered email address"
+        },
+        "displayName": {
+          "type": "string",
+          "description": "User profile full name"
+        },
+        "activeTier": {
+          "type": "string",
+          "description": "The selected active subscription level: Starter, Creator Pro, or Enterprise"
+        },
+        "creditsUsed": {
+          "type": "integer",
+          "description": "Cumulative tokens or credits consumed through prompt generations"
+        },
+        "creditLimit": {
+          "type": "integer",
+          "description": "Maximum token threshold allowed by the selected active tier"
+        },
+        "generatedPromptsCount": {
+          "type": "integer",
+          "description": "The overall count of generated items by the user"
+        },
+        "lastActivityTime": {
+          "type": "string",
+          "description": "Timestamp string indicating when the user last interacted with the app dashboard"
+        },
+        "projects": {
+          "type": "array",
+          "description": "Saved campaign output decks or marketing blueprints"
+        },
+        "prompts": {
+          "type": "array",
+          "description": "User personal instruction templates or prompt designs stored in the Vault"
+        },
+        "activities": {
+          "type": "array",
+          "description": "Chronological audit log of user dashboard activity feeds"
+        },
+        "analyticsData": {
+          "type": "object",
+          "description": "Historical, predictive, and live performance metrics for tokens, API requests, sessions, workspace triggers, and simulated revenue billing"
+        }
+      },
+      "required": ["uid", "email"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "Access-controlled user records"
+    }
+  }
+}
